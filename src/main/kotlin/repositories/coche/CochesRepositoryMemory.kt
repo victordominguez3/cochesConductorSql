@@ -20,7 +20,7 @@ class CochesRepositoryMemory(
 
     override fun importar(items: List<Coche>) {
         logger.debug { "CochesRepository -> Importando datos a la base de datos" }
-        items.forEach { guardar(it) }
+        items.forEach { salvar(it) }
     }
 
     override fun buscarTodos(): List<Coche> {
